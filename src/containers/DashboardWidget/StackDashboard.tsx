@@ -15,7 +15,6 @@ const StackDashboardExtension = () => {
         { Header: 'Content Type', accessor: 'title' },
         {
             Header: 'Entries', accessor: (data: { count: number, uid: string }) => {
-                // return (<Pill items={[{ id: 1, text: data.count, trailingIcon: data.count !== 0 ? <Icon icon="InternalLink" /> : undefined }]} status={data.count === 0 ? 'danger' : 'default'} onPillClickHandler={() => openEntriesView(stack?._data.api_key || '', data.uid || '', data.count || 0)} shouldHaveBorder={false} variant='chip' />)
                 return (data.count > 0 ?<a href={`https://app.contentstack.com/#!/stack/${stack?._data.api_key}/entries?branch=main&page=1&page_size=100&popular_view=entries-only-base&query={"queryObject":{"$and":[{"_variants":{"$in":["$baseVariant"]}}],"_content_type_uid":{"$in":["${data.uid}"]}}}`}>{data.count} - View <Icon icon="InternalLink"></Icon></a> : <>{data.count}</>)
             }
         },
