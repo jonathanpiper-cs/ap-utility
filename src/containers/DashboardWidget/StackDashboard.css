@@ -3,29 +3,31 @@ body {
 }
 
 .layout-container {
-  padding: 0rem;
+  padding: 1rem;
   flex-direction: column;
   flex-shrink: 0;
-  margin: auto;
+  margin: 0;
   height: 95vh;
+  width: auto;
 }
 
 .ui-location {
   padding: 0rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   gap: 1.5rem;
   flex: 1 0 0;
   height: 80vh;
-  width: 95vw;
+  width: auto;
   max-height: 89vh;
-  margin: auto;
+  margin: 0;
+  overflow: scroll;
 }
 
 .ui-container {
-  padding: 1rem 0rem;
-  justify-content: center;
+  /* padding: 1rem 0rem; */
+  justify-content: left;
 }
 
 .config-container {

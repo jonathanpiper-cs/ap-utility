@@ -36,27 +36,32 @@ a {
 .layout-container {
   display: flex;
   height: 96vh;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   gap: 0.625rem;
-  align-self: stretch;
+  align-self: left;
 }
 
 .ui-location-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: left;
+  justify-content: left;
 }
 
 .ui-location {
   display: flex;
+  margin: 0 auto;
   border-radius: 0.5rem;
+  align-items: left;
+  justify-content: left;
   border: 1px solid var(--bg-colors-dolphin-grey-n-200, #dde3ee);
 }
 
 .ui-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   gap: 1.5rem;
   flex: 1 0 0;
 }
@@ -64,7 +69,7 @@ a {
 .logo-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   gap: 1rem;
 }
 
@@ -80,7 +85,7 @@ a {
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%; 
+  line-height: 150%;
   text-transform: capitalize;
 }
 
@@ -103,7 +108,7 @@ a {
   font-family: Inter;
   font-style: normal;
   font-weight: 600;
-  line-height: 150%; 
+  line-height: 150%;
   letter-spacing: 0.00875rem;
   text-transform: capitalize;
 }

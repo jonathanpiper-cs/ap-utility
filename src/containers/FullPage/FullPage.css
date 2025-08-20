@@ -5,23 +5,24 @@ body {
 }
 
 .layout-container {
-  padding: 1.5rem 1.875rem;
+  padding: 2.5rem 1.875rem;
   flex-direction: column;
   flex-shrink: 0;
   margin: auto;
-  height: 95vh;
+  height: 100vh;
 }
 
 .ui-location {
   padding: 1.5rem 1rem;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   gap: 1.9375rem;
   flex: 1 0 0;
-  height: 80vh;
-  width: 95vw;
-  max-height: 89vh;
+  height: 100%;
+  width: 100vw;
+  max-height: 100%;
+  overflow: scroll;
 }
 
 .ui-container {
@@ -50,4 +51,14 @@ body {
 .location-description-text {
   white-space: nowrap;
   word-wrap: break-word;
+}
+
+.content-type-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-type {
+  padding: 0;
+  border-bottom: 1px solid var(--bg-colors-dolphin-grey-n-200, #dde3ee);
 }
